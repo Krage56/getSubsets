@@ -63,7 +63,7 @@ std::vector<std::vector <T>> getSubsets(std::vector<T>& v, size_t k){
     SubSeq<T> ss(v, k);
     std::vector<std::vector <T>> subsets;
     while (! ss.end()) {
-        std::vector<int> s = ss.next();
+        std::vector<T> s = ss.next();
         subsets.push_back(s);
     }
     return subsets;
